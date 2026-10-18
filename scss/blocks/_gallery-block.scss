@@ -1,0 +1,44 @@
+.gallery-block {
+  padding-bottom: 80px;
+
+  @include vp-767 {
+    margin: 0 0 60px;
+  }
+
+  &__wrap {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 215px;
+    gap: 20px;
+
+    @include vp-1023 {
+      grid-template-columns: 500px 180px;
+      gap: 28px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 335px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @include vp-1023 {
+      width: 708px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:focus-visible {
+    background-color: $color-white-lilac;
+    outline: none;
+  }
+
+}

@@ -1,0 +1,44 @@
+.custom-textarea {
+    grid-column: span 3;
+    position: relative;
+
+    &__field {
+        width: 100%;
+        min-height: 160px;
+        border-radius: 8px;
+        resize: none;
+        border: 1px solid $color-hawkes-blue;
+        margin: 0;
+        padding: 0;
+
+        @include vp-1023 {
+            min-height: 140px;
+        }
+
+        @include vp-767 {
+            min-height: 120px;
+        }
+    }
+
+    &__field:hover,
+    &__field:focus-visible {
+        outline: none;
+        border: 1px solid $color-deep-lilac;
+    }
+
+    &__label {
+        position: absolute;
+        left: 0;
+        top: -5px;
+        transform: translateY(-100%);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-grey-suit;
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

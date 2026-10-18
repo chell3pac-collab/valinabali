@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Галерея фотографий - Valinabali</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">О турагентстве</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Безопасность</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Галерея</a>
+            </li>
+          </ul>
+        </div>
+        <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+          <svg width="140" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo-white"></use>
+          </svg>
+        </a>
+        <div class="header__location">
+          <svg class="header__icon-pin" width="28" height="28" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-pin"></use>
+          </svg>
+          <p class="header__location-text">Вылет из
+            <button class="header__location-btn" type="button" aria-label="Кнопка выбора города для вылета">Новосибирска
+            </button>
+          </p>
+        </div>
+        <div class="header__btn-wrapper">
+          <a class="header__favorites" href="#" aria-label="Ссылка на страницу избранное">
+            <svg class="header__favorites-icon" width="22" height="20" aria-hidden="true" fill="none">
+              <use xlink:href="images/sprite.svg#icon-favorites"></use>
+            </svg>
+          </a>
+          <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+            <svg class="header__burger-icon" width="36" height="16" aria-hidden="true" fill="none">
+              <use xlink:href="images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Пляжный отдых</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Отдых с&nbsp;детьми</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Свадебное путешествие</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Спокойный отдых</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Экскурсионные туры</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">На&nbsp;берегу океана</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Отдых в&nbsp;первый раз</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#" aria-label="Ссылка на главную страницу">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link breadcrumbs__link--active">Галерея</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="gallery-block">
+      <div class="container">
+        <h1 class="visually-hidden">Галерея</h1>
+        <div class="gallery-block__wrap">
+          <div class="gallery-block__left">
+            <button class="gallery-block__btn btn btn--filter" type="button">
+              <svg class="gallery-block__icon-filter" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-filter"></use>
+              </svg>
+              Выбрать страну
+            </button>
+            <div class="gallery">
+              <ul class="gallery__list">
+                <li class="gallery__item gallery__item--grid-1">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-mobile.png 1x, images/gallery-img-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-tablet.png 1x, images/gallery-img-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-xxl" src="images/gallery-img.png"
+                        srcset="images/gallery-img-@2x.png 2x" height="300" width="500" alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Галата, Стамбул</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-2">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-2-mobile.png 1x, images/gallery-img-2-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-2-tablet.png 1x, images/gallery-img-2-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-m" src="images/gallery-img-2.png"
+                        srcset="images/gallery-img-2-@2x.png 2x" height="300" width="365"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Рисовые террасы, Тегалаланг, Бали</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-3">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-3-mobile.png 1x, images/gallery-img-3-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-3-tablet.png 1x, images/gallery-img-3-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-l" src="images/gallery-img-3.png"
+                        srcset="images/gallery-img-3-@2x.png 2x" height="410" width="365"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Волшебные арабские ночи в Стамбуле</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-4">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-4-mobile.png 1x, images/gallery-img-4-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-4-tablet.png 1x, images/gallery-img-4-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-xs" src="images/gallery-img-4.png"
+                        srcset="images/gallery-img-4-@2x.png 2x" height="240" width="240"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Пляж и&nbsp;скалы в&nbsp;Нуса Пенида</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-5">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-5-mobile.png 1x, images/gallery-img-5-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-5-tablet.png 1x, images/gallery-img-5-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-xs gallery-card__img--size-xs-tablet"
+                        src="images/gallery-img-5.png" srcset="images/gallery-img-5-@2x.png 2x" height="240" width="240"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Закат, Мальдивы</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-6">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-6-mobile.png 1x, images/gallery-img-6-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-6-tablet.png 1x, images/gallery-img-6-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-xl" src="images/gallery-img-6.png"
+                        srcset="images/gallery-img-6-@2x.png 2x" height="490" width="365"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Дубай</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-7">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-7-mobile.png 1x, images/gallery-img-7-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-7-tablet.png 1x, images/gallery-img-7-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-xxl gallery-card__img--size-xxl-tablet"
+                        src="images/gallery-img-7.png" srcset="images/gallery-img-7-@2x.png 2x" height="300" width="500"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Архитектура, Абу-Даби</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-8">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-8-mobile.png 1x, images/gallery-img-8-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-8-tablet.png 1x, images/gallery-img-8-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-s" src="images/gallery-img-8.png"
+                        srcset="images/gallery-img-8-@2x.png 2x" height="315" width="240"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Район Фаном, Сураттхани, Таиланд</figcaption>
+                  </figure>
+                </li>
+                <li class="gallery__item gallery__item--grid-9">
+                  <figure class="gallery-card">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="images/gallery-img-9-mobile.png 1x, images/gallery-img-9-mobile@2x.png 2x">
+                      <source media="(max-width: 1439px)"
+                        srcset="images/gallery-img-9-tablet.png 1x, images/gallery-img-9-tablet@2x.png 2x">
+                      <img class="gallery-card__img gallery-card__img--size-s" src="images/gallery-img-9.png"
+                        srcset="images/gallery-img-9-@2x.png 2x" height="315" width="240"
+                        alt="Фотография тура в галерии">
+                    </picture>
+                    <figcaption class="gallery-card__caption">Национальный парк Као Сок, Таиланд</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <button class="gallery-block__btn btn" type="button">Показать еще</button>
+          </div>
+          <div class="menu-tours">
+            <ul class="menu-tours__list">
+              <li class="menu-tours__item">
+                <button class="menu-tours__link menu-tours__link--active" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Все</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-do"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Доминикана</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-it"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Италия</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-cu"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Куба</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-my"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Малайзия</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-th"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Таиланд</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-tr"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Турция</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-ru"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Россия</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-re"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Франция</span>
+                </button>
+              </li>
+              <li class="menu-tours__item">
+                <button class="menu-tours__link" type="button" aria-label="Ссылка на город">
+                  <svg class="menu-tours__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-flag-jp"></use>
+                  </svg>
+                  <span class="menu-tours__link-text">Япония</span>
+                </button>
+              </li>
+            </ul>
+            <button class="menu-tours__btn btn btn--bg-lilac btn--size-small" type="button">Подобрать туры</button>
+            <button class="menu-tours__btn-mobile btn" type="button">
+              <svg class="menu-tours__btn-icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-filter"></use>
+              </svg>
+              <span class="menu-tours__btn-text">Выбрать страну</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a class="footer__logo-link" href="#" aria-label="Ссылка на главную">
+          <svg width="140" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo-white"></use>
+          </svg>
+        </a>
+        <div class="footer__info">
+          <a class="footer__info-tel" href="tel:8800000000">8 800 000-00-00</a>
+          <p class="footer__info-description">ежедневно с&nbsp;10:00 до&nbsp;21:00</p>
+        </div>
+        <ul class="social">
+          <li class="social__list">
+            <a class="social__link" href="#" aria-label="Ссылка на youtube">
+              <svg class="social__link-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list">
+            <a class="social__link" href="#" aria-label="Ссылка на вконтакте">
+              <svg class="social__link-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="modal modal--activ modal--success">
+    <div class="modal__wrapper">
+      <div class="modal__content">
+
+        <!-- Место для формы и успешной отправки -->
+
+        <!-- Первая обёртка: Форма -->
+        <div class="modal__form-wrapper">
+          <div class="modal__form__selection">
+            <form class="order-form" action="#" method="post">
+              <fieldset class="order-form__group">
+                <legend class="order-form__group-name">Заявка на подбор тура</legend>
+                <div class="order-form__inner">
+                  <div class="custom-input custom-input--error">
+                    <input class="custom-input__field" type="tel" name="user-tel" id="user-tel"
+                      placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+                    <label class="custom-input__label" for="user-tel">Телефон*</label>
+                    <span class="custom-input__error">Некорректное значение</span>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="text" name="user-name" id="user-name">
+                    <label class="custom-input__label" for="user-name">Имя</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="email" name="user-mail" id="user-mail">
+                    <label class="custom-input__label" for="user-tel">E-mail</label>
+                  </div>
+                  <div class="custom-textarea">
+                    <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+                    <label class="custom-textarea__label" for="comment">Комментарий</label>
+                  </div>
+                </div>
+                <button class="order-form__btn btn" type="submit">Оставить заявку</button>
+                <span class="order-form__text">Нажимая кнопку &quot;‎Оставить заявку&quot;‎, вы&nbsp;соглашаетесь
+                  с&nbsp;условиями сервиса</span>
+              </fieldset>
+              <svg class="modal__icon-airplane" width="234" height="72" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-airplane"></use>
+              </svg>
+              <svg class="modal__icon-suitcase" width="71" height="133" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-suitcase"></use>
+              </svg>
+              <button class="modal__close-btn" aria-label="Закрыть форму">
+                <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Вторая обёртка: Состояние успешной отправки -->
+
+        <div class="modal__success-wrapper modal__success-wrapper--success">
+          <div class="modal__success-wrap">
+            <h2 class="modal__title">Спасибо!</h2>
+            <p class="modal__text">Мы&nbsp;получили ваш запрос и&nbsp;скоро свяжемся с&nbsp;вами.</p>
+            <button class="modal__btn btn" type="button">Хорошо</button>
+          </div>
+          <button class="modal__close-btn" aria-label="Закрыть форму">
+            <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <svg class="modal__icon-confetti-2" width="60" height="60" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-confetti-2"></use>
+          </svg>
+          <svg class="modal__icon-confetti" width="60" height="60" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-confetti"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
